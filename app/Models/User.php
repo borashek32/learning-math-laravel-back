@@ -21,6 +21,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'isVerified',
+        'role',
+        'verificationLink',
+        'createNewPasswordLink',
+        'avatarPath',
+        'avatarName',
     ];
 
     /**

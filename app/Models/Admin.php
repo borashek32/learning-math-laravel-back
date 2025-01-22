@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 /**
+ * @property string $name
  * @property string $email
  */
 class Admin extends Authenticatable implements FilamentUser, HasName
@@ -23,6 +24,7 @@ class Admin extends Authenticatable implements FilamentUser, HasName
      * @var array<int, string>
      */
     protected $fillable = [
+        'name',
         'email',
         'password',
     ];

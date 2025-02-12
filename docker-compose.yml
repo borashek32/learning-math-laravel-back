@@ -23,7 +23,7 @@ services:
     depends_on:
       - api_db
 
-  api_db: 
+  api_db:
     container_name: api_database
     image: mysql:9.0
     restart: always
